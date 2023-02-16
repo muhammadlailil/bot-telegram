@@ -3,7 +3,10 @@ import { Log } from "./logger.js";
 const app = express();
 const port = 5000
 
-app.use('/', (req,res)=>{
+app.get('/',(req,res)=>{
+    res.send('Hellow :)')
+})
+app.get('/trade', (req,res)=>{
     Log(`message = ${JSON.stringify(req.body)}`)
     res.send('success')
 });
