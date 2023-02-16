@@ -6,7 +6,7 @@ const port = 5000
 app.get('/',(req,res)=>{
     res.send('Hellow :)')
 })
-app.get('/trade', (req,res)=>{
+app.post('/trade', (req,res)=>{
     Log(`message = ${JSON.stringify(req.body)}`)
     res.send('success')
 });
