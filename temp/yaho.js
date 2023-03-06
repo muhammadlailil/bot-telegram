@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import installMouseHelper from "./install-mouse-helper.js";
+import installMouseHelper from "../install-mouse-helper.js";
 
 // https://www.bannerbear.com/blog/how-to-take-screenshots-with-puppeteer/
 (async () => {

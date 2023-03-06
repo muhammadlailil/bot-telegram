@@ -1,5 +1,5 @@
 import express from "express";
-import { Log } from "./logger.js";
+import { Log } from "../logger.js";
 const app = express();
 const port = 5000
 
