@@ -16,7 +16,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 
 bot.on('message', (msg) => {
      Log(`message = ${JSON.stringify(msg)}`)
-     handleRequest(msg)
+     handleRequest(msg,bot)
      bot.sendMessage(chatId, 'Received your message');
 });
 
