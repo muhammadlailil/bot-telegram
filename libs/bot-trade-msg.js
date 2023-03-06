@@ -16,7 +16,7 @@ export default function handleRequest(msg, bot) {
                let emiten = text[1];
                if (emiten) {
                     emiten = emiten?.toUpperCase()
-                    if (allEmitenList.includes(emiten)) {
+                    if (allEmitenList().includes(emiten)) {
                          let link = null
                          let format = text[2] || 'd'
                          switch (format) {
