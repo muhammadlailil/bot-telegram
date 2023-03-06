@@ -1,10 +1,10 @@
-import generateChartSaham from "./image-generator";
-import { c1dUrl } from "./trade-link/c1d";
-import { c1hUrl } from "./trade-link/c1h";
-import { c2dUrl } from "./trade-link/c2d";
-import { c2hUrl } from "./trade-link/c2h";
+import generateChartSaham from "./image-generator.js";
+import { c1dUrl } from "./trade-link/c1d.js";
+import { c1hUrl } from "./trade-link/c1h.js";
+import { c2dUrl } from "./trade-link/c2d.js";
+import { c2hUrl } from "./trade-link/c2h.js";
 import fs from "fs"
-import { allEmitenList } from "./available-emiten";
+import { allEmitenList } from "./available-emiten.js";
 
 const availableCommand = ['/c1', '/c2']
 export default function handleRequest(msg, bot) {
